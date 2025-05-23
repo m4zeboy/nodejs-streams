@@ -5,6 +5,14 @@ This project consists of two parts:
 1. **Server**: A Node.js server that reads anime data from a CSV file and streams it to clients
 2. **App**: A web frontend that consumes the streaming API and renders content in real-time
 
+## Credits
+
+This project was inspired by Erick Wendel's tutorial on Node.js streams:
+
+- [Node.js Streams and the Web Streams API - Erick Wendel](https://www.youtube.com/watch?v=-IpRYbL4yMk&t=22s&ab_channel=ErickWendel)
+
+Thanks to Erick for the excellent educational content on streams implementation in JavaScript!
+
 ## Project Structure
 
 ```
