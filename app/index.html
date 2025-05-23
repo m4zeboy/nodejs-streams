@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webstream mec demais</title>
     <style>
+      body {
+        padding: 0 10rem;
+      }
       .grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -13,18 +16,18 @@
       }
       .grid > article {
         border: 1px solid #ccc;
+        border-radius: 8px;
       }
 
       .grid .text {
+        text-align: justify;
         padding: 20px;
       }
     </style>
   </head>
   <body>
-    <button id="start">Start</button>
-    <button id="stop">Stop</button>
-
     <div class="container">
+      <h1>Mec Streams</h1>
       <main id="cards" class="grid"></main>
     </div>
     <script type="module" src="index.js"></script>

@@ -3,7 +3,6 @@ import { createReadStream } from "node:fs";
 import { createServer } from "node:http";
 import { Readable, Transform } from "node:stream";
 import { WritableStream } from "node:stream/web";
-import { setTimeout } from "node:timers/promises";
 
 const PORT = 3000;
 // curl -i -X OPTIONS -N localhost:3000
@@ -42,7 +41,7 @@ createServer(async (req, res) => {
     .pipeTo(
       new WritableStream({
         async write(chunk) {
-          await setTimeout(100);
+          // await setTimeout(100);
           items++;
           res.write(chunk);
         },
